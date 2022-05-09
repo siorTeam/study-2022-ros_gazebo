@@ -2,7 +2,7 @@
 =============================================
 
 # Description
-* * *
+
 가제보와 로스를 연동한 튜토리얼
 
 Link: [가제보 로스 연동 기본 세팅법][link]
@@ -10,7 +10,7 @@ Link: [가제보 로스 연동 기본 세팅법][link]
 [link]:[https://classic.gazebosim.org/tutorials?tut=ros_overview#Upgradingfromsimulator_gazebo(ROSgroovyandearlier)]
 
 # Dependency
-* * *
+
        sudo apt-get install ros-melodic-joint-state-controller 
 
        sudo apt-get install ros-melodic-effort-controllers
@@ -20,7 +20,7 @@ Link: [가제보 로스 연동 기본 세팅법][link]
        sudo apt-get install ros-melodic-velocity-controllers
 
 # Run
-* * *
+
 1) Download the "simple_example_description" directory and put it into your Desktop/workspace/src/ directory.
 
 2) Build the project: 
@@ -37,9 +37,9 @@ Link: [가제보 로스 연동 기본 세팅법][link]
 
 
 # Package Description
-* * *
+
 ## 1) urdf
-* * *
+
 기존에 만든 로봇의 urdf를 추가한다. 그 후에 뒤쪽 부분에 gazebo 플러그인을 추가한다.
 ```
  <!--                GAZEBO RELATED PART                             -->
@@ -76,7 +76,7 @@ Link: [가제보 로스 연동 기본 세팅법][link]
 
 
 ## 2) Config.yaml
-* * *
+
 ```
 #simple_model is the name space
 simple_model:
@@ -105,7 +105,7 @@ publish할 토픽에 관한 parameter들을 정의해주는 파일 같다.
 두번째는 base_to_second_joint_position_controller에 대한 parameter들을 정의했다. 
 
 ## 3) spawn_robot.launch
-* * *
+
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -174,12 +174,12 @@ publish할 토픽에 관한 parameter들을 정의해주는 파일 같다.
 그 아래는 노드 3개, urdf_spawner, controller_spawner, robot_state_publisher를 실행한다. 
 
 ## 4) hello.cpp
-* * *
+
 
 그냥 로스를 돌리기 위한 기본 코드. 
 
 ## 5) simple.world
-* * *
+
 가제보 월드에 대한 정보가 담긴 파일이다. 빈 공간이 담겨있는 파일이고, 자세하게 알고 싶다면 가제보 공홈 튜토리얼 참고. 
 
 # Original
