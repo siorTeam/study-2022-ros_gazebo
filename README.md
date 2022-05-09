@@ -22,12 +22,15 @@ Link: [가제보 로스 연동 기본 세팅법][link]
 # Run
 * * *
 1) Download the "simple_example_description" directory and put it into your Desktop/workspace/src/ directory.
+
 2) Build the project: 
        $ cd Desktop/workspace
        $ catkin_make
        $ source devel/setup.bash
+
 3) Run the project:
        $ roslaunch simple_example_description spawn_robot.launch
+
 4) to give a command to get the joint to move:
        $ rostopic pub /simple_model/base_to_second_joint_position_controller/command std_msgs/Float64 "data: 0.4"
        (속도조절)
@@ -35,11 +38,10 @@ Link: [가제보 로스 연동 기본 세팅법][link]
 
 # Package Description
 * * *
-1) urdf
+## 1) urdf
 * * *
 기존에 만든 로봇의 urdf를 추가한다. 그 후에 뒤쪽 부분에 gazebo 플러그인을 추가한다.
-<pre>
-<code>
+```
  <!--                GAZEBO RELATED PART                             -->
 
   <!-- ROS Control plugin for Gazebo. This allows Gazebo and Ros to to be connected,
@@ -68,17 +70,14 @@ Link: [가제보 로스 연동 기본 세팅법][link]
       <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
     </joint>
   </transmission>
-
-</code>
-</pre>
+```
 
 첫번째는 가제보 플러그인, 두번째는 조인트를 제어하기 위해서 컨트롤러를 정의한다.
 
 
-2) Config.yaml
+## 2) Config.yaml
 * * *
-<pre>
-<code>
+```
 #simple_model is the name space
 simple_model:
     # based on https://wiki.ros.org/ros_control this controller reads the state 
@@ -95,9 +94,7 @@ simple_model:
         type: velocity_controllers/JointVelocityController
         joint: base_to_second_joint
         pid: {p: 1.0, i: 0.0, d: 0.1}
-
-</code>
-</pre>
+```
 
 '#'는 주석이므로 무시하자. 
 
@@ -107,11 +104,10 @@ publish할 토픽에 관한 parameter들을 정의해주는 파일 같다.
 
 두번째는 base_to_second_joint_position_controller에 대한 parameter들을 정의했다. 
 
-3) spawn_robot.launch
+## 3) spawn_robot.launch
 * * *
 
-<pre>
-<code>
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
@@ -165,9 +161,7 @@ publish할 토픽에 관한 parameter들을 정의해주는 파일 같다.
         <remap from="joint_states" to="/simple_model/joint_states" />
     </node>
 </launch>
-
-</code>
-</pre>
+```
 
 해당 파일은 launch파일로써 여러 노드들을 동시에 실행함과 동시에 여러 파라미터들을 설정하면서 실행이 가능하다. 
 
@@ -179,13 +173,13 @@ publish할 토픽에 관한 parameter들을 정의해주는 파일 같다.
 
 그 아래는 노드 3개, urdf_spawner, controller_spawner, robot_state_publisher를 실행한다. 
 
-4) hello.cpp
+## 4) hello.cpp
 * * *
 
 그냥 로스를 돌리기 위한 기본 코드. 
 
-5) simple.world
-
+## 5) simple.world
+* * *
 가제보 월드에 대한 정보가 담긴 파일이다. 빈 공간이 담겨있는 파일이고, 자세하게 알고 싶다면 가제보 공홈 튜토리얼 참고. 
 
 # Original
