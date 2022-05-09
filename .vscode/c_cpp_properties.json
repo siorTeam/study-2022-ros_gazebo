@@ -1,0 +1,62 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/jaehyun/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/jaehyun/catkin_ws/src/aidinvi/include/**",
+        "/home/jaehyun/catkin_ws/src/any_node/any_node/include/**",
+        "/home/jaehyun/catkin_ws/src/any_node/any_node_example/include/**",
+        "/home/jaehyun/catkin_ws/src/any_node/any_worker/include/**",
+        "/home/jaehyun/catkin_ws/src/async_foothold/multi_thread/include/**",
+        "/home/jaehyun/catkin_ws/src/beginner_tutorials/include/**",
+        "/home/jaehyun/catkin_ws/src/beginner_tutorials_gazebo/include/**",
+        "/home/jaehyun/catkin_ws/src/champ/champ/include/**",
+        "/home/jaehyun/catkin_ws/src/champ/champ_base/include/**",
+        "/home/jaehyun/catkin_ws/src/champ/champ_config/include/**",
+        "/home/jaehyun/catkin_ws/src/vision_opencv/cv_bridge/include/**",
+        "/home/jaehyun/catkin_ws/src/ddynamic_reconfigure/include/**",
+        "/home/jaehyun/catkin_ws/src/depthimage_to_laserscan/include/**",
+        "/home/jaehyun/catkin_ws/src/elevation_mapping/elevation_mapping/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_core/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_costmap_2d/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_cv/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_demos/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_filters/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_loader/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_octomap/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_pcl/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_ros/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_rviz_plugin/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_sdf/include/**",
+        "/home/jaehyun/catkin_ws/src/grid_map/grid_map_visualization/include/**",
+        "/home/jaehyun/catkin_ws/src/vision_opencv/image_geometry/include/**",
+        "/home/jaehyun/catkin_ws/src/kindr/include/**",
+        "/home/jaehyun/catkin_ws/src/kindr_ros/kindr_ros/include/**",
+        "/home/jaehyun/catkin_ws/src/kindr_ros/kindr_rviz_plugins/include/**",
+        "/home/jaehyun/catkin_ws/src/message_logger/include/**",
+        "/home/jaehyun/catkin_ws/src/kindr_ros/multi_dof_joint_trajectory_rviz_plugins/include/**",
+        "/home/jaehyun/catkin_ws/src/octomap_msgs/include/**",
+        "/home/jaehyun/catkin_ws/src/any_node/param_io/include/**",
+        "/home/jaehyun/catkin_ws/src/perception_pcl/pcl_conversions/include/**",
+        "/home/jaehyun/catkin_ws/src/perception_pcl/pcl_ros/include/**",
+        "/home/jaehyun/catkin_ws/src/pcl_rs/include/**",
+        "/home/jaehyun/catkin_ws/src/realsense-ros-gazebo/realsense-ros/realsense2_camera/include/**",
+        "/home/jaehyun/catkin_ws/src/realsense-ros-gazebo/realsense_gazebo_plugin/include/**",
+        "/home/jaehyun/catkin_ws/src/any_node/signal_handler/include/**",
+        "/home/jaehyun/catkin_ws/src/tf2_sensor_msgs/include/**",
+        "/home/jaehyun/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/jaehyun/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/jaehyun/catkin_ws/src/turtlebot3/turtlebot3_slam/include/**",
+        "/home/jaehyun/catkin_ws/src/yocs_velocity_smoother/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
