@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 
 # The name of this package (must match name in package.xml).
-project(gazebo_one_joint)
+project(2022-ros_gazebo)
 
 # Find the catkin build system, and any other packages on which we depend. In
 # this case we only need the roscpp library.

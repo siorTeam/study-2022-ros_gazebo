@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <!-- name of package must match with CMakeLists.txt!!! -->
-  <name>gazebo_one_joint</name>
+  <name>2022-ros_gazebo</name>
   <version>0.0.1</version>
   <description>
     simple example on how to move joints in Gazebo

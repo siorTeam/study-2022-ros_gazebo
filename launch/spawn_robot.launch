@@ -2,7 +2,7 @@
 <launch>
 
     <!-- add the Gazebo world so that we launch it all together-->
-    <arg name="model" default="$(find gazebo_one_joint)/urdf/robot.urdf"/>
+    <arg name="model" default="$(find 2022-ros_gazebo)/urdf/robot.urdf"/>
     <arg name="world" default="empty"/> 
     <arg name="paused" default="false"/>
     <arg name="use_sim_time" default="true"/>
@@ -12,7 +12,7 @@
     <arg name="verbose" value="true"/>
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find gazebo_one_joint)/worlds/simple.world"/>
+    <arg name="world_name" value="$(find 2022-ros_gazebo)/worlds/simple.world"/>
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="gui" value="$(arg gui)"/>
@@ -23,7 +23,7 @@
     </include>
 
     <!--load urdf into parameter server-->
-    <param name="robot_description" textfile="$(find gazebo_one_joint)/urdf/robot.urdf" />
+    <param name="robot_description" textfile="$(find 2022-ros_gazebo)/urdf/robot.urdf" />
 
 	
     <node name="urdf_spawner" 
@@ -34,7 +34,7 @@
           args="-urdf -model simple_model -param robot_description"/>
 
     <!-- load the controllers -->
-    <rosparam file="$(find gazebo_one_joint)/config/config.yaml" command="load"/>
+    <rosparam file="$(find 2022-ros_gazebo)/config/config.yaml" command="load"/>
 
     <node name="controller_spawner" 
           pkg ="controller_manager" 
