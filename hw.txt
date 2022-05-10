@@ -1,0 +1,9 @@
+공부해야할것
+
+gazebo_ros_control 플러그인?
+
+transmission?
+
+joint_state_controller?
+
+base_to_second_joint_position_controller?

@@ -40,7 +40,7 @@
           pkg ="controller_manager" 
           type="spawner" 
           ns="/simple_model" 
-          args="base_to_second_joint_position_controller joint_state_controller"/>
+          args="left_wheel_controller right_wheel_controller joint_state_controller"/>
     
 	<!-- converts joint states to TF transforms -->
     <node name="robot_state_publisher" 
