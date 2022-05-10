@@ -7,8 +7,10 @@
 
 Link: [가제보 로스 연동 기본 세팅법][link]
 
-[link]:[https://classic.gazebosim.org/tutorials?tut=ros_overview#Upgradingfromsimulator_gazebo(ROSgroovyandearlier)]
+Original Project : [참조 프로젝트][Orig Git project]
 
+[link]:https://classic.gazebosim.org/tutorials?tut=ros_overview#Upgradingfromsimulator_gazebo(ROSgroovyandearlier)
+[Orig Git project]:https://github.com/Toronto-Robotics-club/ros_control_and_gazebo_simple_position_controller
 # Dependency
 
        sudo apt-get install ros-melodic-joint-state-controller 
@@ -17,25 +19,24 @@ Link: [가제보 로스 연동 기본 세팅법][link]
 
        sudo apt-get install ros-melodic-velocity-controllers
 
-       sudo apt-get install ros-melodic-velocity-controllers
+       sudo apt-get install ros-melodic-position-controllers
 
 # Run
 
-1) Download the "simple_example_description" directory and put it into your Desktop/workspace/src/ directory.
+1) Build the project: 
 
-2) Build the project: 
-       $ cd Desktop/workspace
-       $ catkin_make
-       $ source devel/setup.bash
+       cd Desktop/workspace
+       catkin_make
+       source devel/setup.bash
 
-3) Run the project:
-       $ roslaunch simple_example_description spawn_robot.launch
+2) Run the project:
 
-4) to give a command to get the joint to move:
-       $ rostopic pub /simple_model/base_to_second_joint_position_controller/command std_msgs/Float64 "data: 0.4"
-       (속도조절)
+       roslaunch simple_example_description spawn_robot.launch
 
+3) to give a command to get the joint to move:(속도조절)
 
+       rostopic pub /simple_model/base_to_second_joint_position_controller/command std_msgs/Float64 "data: 0.4"
+       
 # Package Description
 
 ## 1) urdf
