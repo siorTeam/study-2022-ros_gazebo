@@ -37,6 +37,6 @@ git checkout 이동하고 싶은 브랜치 이름 입력
 
 ## 5) 이후 catkin_make 진행
 
-       cd ~/catkin_ws/src
+       cd ~/catkin_ws
        
        catkin_make
