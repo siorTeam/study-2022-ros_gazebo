@@ -5,15 +5,19 @@
 
 ## 1) git 설치
 
-       sudo apt-get install git
+       sudo apt-get install git ssh
 
 ## 2) ssh 키 등록
 
        cd ~/.ssh
 
-       ssh-keygen
+       안되면 mkdir ~/.ssh
 
-       cat ~/.ssh/id_rsa.pub
+       cd ~/.ssh
+
+       ssh-keygen -t ed25519 -C "your_email@example.com"
+
+       cat id_ed25519
 
 cat 해서 뜬 글 복사 후 Gitlab의 자기 프로파일 - preference - SSH Keys 에다 붙여넣고 기기 등록
 
